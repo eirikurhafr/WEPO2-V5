@@ -35,7 +35,7 @@
     0% {background: repeating-linear-gradient(
         45deg,
         rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0.08) 10px,
+        rgba(0, 0, 0, 0.03) 10px,
         rgba(0, 0, 0, 0.1) 10px,
         rgba(0, 0, 0, 0.18) 20px
         );
