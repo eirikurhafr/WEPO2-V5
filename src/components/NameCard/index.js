@@ -1,14 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { nameCard, image } from './nameCard.css';
+import { nameCard, image, attr} from './nameCard.css';
 
 const NameCard = ({ name, email, telephone, imageUrl }) => {
     return(
         <div className={nameCard}>
             <img className={ image } src={ imageUrl } alt="Cool guy" />
-            <p>Name: { name }</p>
-            <p>Email: { email }</p>
-            <p>Telephone: { telephone }</p>
+            <h4 className={attr}>Name: </h4>
+            <p>{ name }</p>
+            <h4 className={attr}>Email: </h4>
+            <p>{ email }</p>
+            <h4 className={attr}>Telephone: </h4>
+            <p>{ telephone }</p>
         </div>
     )
 };
