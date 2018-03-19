@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Modal from './components/Modal';
+import ProgressBar from './components/ProgressBar'
 import NameCard from './components/NameCard'
 import { modalButton } from './index.css'
 
@@ -24,6 +25,11 @@ class App extends Component {
           email="orn16@ru.is"
           telephone="+354-58-12345"
           imageUrl="https://www.commondreams.org/sites/default/files/styles/cd_large/public/views-article/19225749489_a57875fe79_h.jpg?itok=zFMh4iyP"/>
+        <ProgressBar
+          progress={90}
+          striped={true}
+          animated={true} 
+          state='info' />
       </div>
     );
   }
