@@ -25,6 +25,7 @@
     height: 400px;
     text-align: center;
     background-color: whitesmoke;
+    border: solid 5px rgb(24, 27, 27);
     animation-name: modalUp;
     animation-duration: .1s;
     animation-timing-function: ease-in-out;

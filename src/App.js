@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Modal from './components/Modal';
 import NameCard from './components/NameCard'
+import { modalButton } from './index.css'
 
 class App extends Component {
   constructor(props) {
@@ -10,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <button onClick={() => this.setState({ isOpen: true })}>Modal</button>
+        <button className={ modalButton } onClick={() => this.setState({ isOpen: true })}>Modal</button>
         <Modal 
           isOpen={this.state.isOpen} 
           onClose={() => this.setState({ isOpen: false })}>

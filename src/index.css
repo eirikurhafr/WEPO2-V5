@@ -3,3 +3,10 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.modalButton{
+  float: left;
+  margin: 50px;
+  width: 70px;
+  height: 40px;
+}
