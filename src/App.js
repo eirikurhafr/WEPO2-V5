@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Modal from './components/Modal';
 import ProgressBar from './components/ProgressBar'
 import NameCard from './components/NameCard'
-import { modalButton } from './index.css'
+import { modalButton, progressBars } from './index.css'
 
 class App extends Component {
   constructor(props) {
@@ -21,15 +21,34 @@ class App extends Component {
           <Modal.Footer>Modal Footer</Modal.Footer>
         </Modal>
         <NameCard 
-          name="Örn Friðriksson"
+          name="Örn Friðriksson la lal ala l fsdlsdfh lksdnhflakdjbf lksdglkhsdflkasdlkskd "
           email="orn16@ru.is"
           telephone="+354-58-12345"
           imageUrl="https://www.commondreams.org/sites/default/files/styles/cd_large/public/views-article/19225749489_a57875fe79_h.jpg?itok=zFMh4iyP"/>
-        <ProgressBar
-          progress={90}
-          striped={true}
-          animated={true} 
-          state='info' />
+        
+          <div className={progressBars}>
+            <ProgressBar
+              progress={90}
+              striped={true}
+              animated={true} 
+              state='info' />
+            <ProgressBar
+              progress={40}
+              striped={true}
+              animated={true} 
+              state='success' />
+            <ProgressBar
+              progress={10}
+              striped={true}
+              animated={true} 
+              state='warning' />
+            <ProgressBar
+              progress={75}
+              striped={true}
+              animated={true} 
+              state='danger' />
+          </div>
+          
       </div>
     );
   }

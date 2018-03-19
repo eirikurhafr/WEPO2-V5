@@ -10,3 +10,10 @@ body {
   width: 70px;
   height: 40px;
 }
+
+.progressBars {
+  float: left;
+  width: 550px;
+  height: 500px;
+  align-content: center;
+}

@@ -8,8 +8,10 @@ const NameCard = ({ name, email, telephone, imageUrl }) => {
             <img className={ image } src={ imageUrl } alt="Cool guy" />
             <h4 className={attr}>Name: </h4>
             <p>{ name }</p>
+            <br />
             <h4 className={attr}>Email: </h4>
             <p>{ email }</p>
+            <br />
             <h4 className={attr}>Telephone: </h4>
             <p>{ telephone }</p>
         </div>

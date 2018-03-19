@@ -9,7 +9,7 @@ const ProgressBar = ({ progress, striped, animated, state }) => {
         <div className={progressBar}>
             <div className={`${styles[state]} ${animated}`} style={{width: `${progress}%`}}>
                 <div className={ `${striped ? stripes : '' }`}>
-                    Loading
+                    {progress}%
                 </div>
             </div>
         </div>
