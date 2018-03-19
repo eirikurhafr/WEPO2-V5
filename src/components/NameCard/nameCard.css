@@ -1,0 +1,16 @@
+.nameCard {
+    position: relative;
+    width: 500px;
+    height: 350px;
+    text-align: center;
+    background-color: thistle;
+    float: left;
+}
+
+.image {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    padding-left: 45px;
+    padding-right: 45px; 
+}
