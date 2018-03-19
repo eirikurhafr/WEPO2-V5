@@ -30,22 +30,22 @@ class App extends Component {
             <ProgressBar
               progress={90}
               striped={true}
-              animated={true} 
+              animated={false} 
               state='info' />
             <ProgressBar
               progress={40}
-              striped={true}
+              striped={false}
               animated={true} 
               state='success' />
             <ProgressBar
-              progress={10}
+              progress={60}
               striped={true}
               animated={true} 
               state='warning' />
             <ProgressBar
               progress={75}
-              striped={true}
-              animated={true} 
+              striped={false}
+              animated={false} 
               state='danger' />
           </div>
           

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles, { progressBar, stripes } from './progressBar.css';
+import styles, { progressBar, stripes, animatedStripes } from './progressBar.css';
 
 
 
@@ -8,7 +8,7 @@ const ProgressBar = ({ progress, striped, animated, state }) => {
     return(
         <div className={progressBar}>
             <div className={`${styles[state]} ${animated}`} style={{width: `${progress}%`}}>
-                <div className={ `${striped ? stripes : '' }`}>
+                <div className={ `${striped ? `${animated ? animatedStripes : stripes }` : '' }`}>
                     {progress}%
                 </div>
             </div>
