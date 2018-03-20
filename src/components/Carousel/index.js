@@ -4,29 +4,38 @@ import styles, { prev, next, carousel, img } from './carousel.css';
 
 const Carousel = ({ images, size }) => {
     var imgName = 0;
-    var changePic = (incDec) => {
-        if(imgName === this.images.size - 1 && incDec === 1) {
+    
+    var incrementPic = () => {
+        if(imgName === images.size - 1) {
             imgName = 0;
         }
-        else if(imgName === 0 && incDec === -1) {
-            imgName = this.images.size - 1;
-        }
         else {
-            imgName += incDec;
+            imgName += 1;
         }
     }
+
+    var decrementPic = () => {
+        if(imgName === 0) {
+            imgName = images.size - 1;
+        }
+        else {
+            imgName -= 1;
+        }
+    }
+
+
     return(
         <div className={ carousel }>
-            <button className={{ prev }} onClick={ changePic(-1) }> Prev </button>
+            <button className={{ prev }} onClick={ decrementPic() }> Prev </button>
             <img className={ `${styles[size]}` } src={images[imgName]} alt="carousel"/>
-            <button className={{ next }} onClick={ changePic(1) }> Next </button>
+            <button className={{ next }} onClick={ incrementPic() }> Next </button>
         </div>
     )
 }
 
 Carousel.propTypes = {
     //display the name
-    images: PropTypes.array,
+    images: PropTypes.array.isRequired,
     //display email
     size: PropTypes.oneOf(['small', 'medium', 'large'])
 }
