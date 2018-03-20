@@ -72,7 +72,8 @@ class App extends Component {
           <br />
           <Carousel
             images={['http://blogs.herald.com/.a/6a00d83451587d69e201901df83045970b-pi',
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEsBsyagjBiUm9vwwkSTDAdX9-Z3F4-wCtNEV1GSD5L5rNfQPNrg'
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEsBsyagjBiUm9vwwkSTDAdX9-Z3F4-wCtNEV1GSD5L5rNfQPNrg',
+            'https://i.imgur.com/SdaR26h.png'
             ]}
             size='large' />
       </div>
