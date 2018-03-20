@@ -1,0 +1,37 @@
+.carousel {
+    margin-left: 25%;
+    box-shadow: 10px 10px 15px 5px gray;
+    margin: 20px;
+    width: min-content;
+    height: auto;
+    display: flex;
+}
+
+.prev {
+    height: inherit;
+    width: 40px;
+}
+
+.images {
+    float: inherit;
+}
+
+.next {
+    height: inherit;
+    width: 40px;
+}
+
+.small {
+    width: 150px;
+    height: 100px;
+}
+
+.medium {
+    width: 300px;
+    height: 250px;
+}
+
+.large {
+    width: 600px;
+    height: 450px;
+}
