@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Modal from './components/Modal';
-import Col from './components/Col'
-import Row from './components/Row'
+import Col from './components/Col';
+import Row from './components/Row';
 import Carousel from './components/Carousel';
-import NameCard from './components/NameCard'
-import ProgressBar from './components/ProgressBar'
-import { progressBars, modalButton } from './index.css'
+import DatePicker from './components/DatePicker';
+import NameCard from './components/NameCard';
+import ProgressBar from './components/ProgressBar';
+import { progressBars, modalButton } from './index.css';
 
 class App extends Component {
   constructor(props) {
@@ -76,6 +77,9 @@ class App extends Component {
             'https://i.imgur.com/SdaR26h.png'
             ]}
             size='large' />
+          <DatePicker
+            onDatePick={date => this.setState({ date })}
+            locale='is-IS' />
       </div>
     );
   }
