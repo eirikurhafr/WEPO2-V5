@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { rows, size } from './row.css';
+import { rows } from './row.css';
 
 const Row = ({ children }) => {
     return(

@@ -1,6 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import styles, { cols } from './col.css';
+import { cols } from './col.css';
 
 const Col = ({ size }) => {
     return(

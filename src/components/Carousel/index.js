@@ -3,14 +3,13 @@ import PropTypes from 'prop-types';
 import styles, { prev, next, carousel, img } from './carousel.css';
 
 const Carousel = ({ images, size }) => {
-    var imgName = this.state;
-    imgName.setState(0);
+    var imgName = 0;
     var changePic = (incDec) => {
-        if(imgName === this.images.length - 1 && incDec === 1) {
+        if(imgName === this.images.size - 1 && incDec === 1) {
             imgName = 0;
         }
         else if(imgName === 0 && incDec === -1) {
-            imgName = this.images.length - 1;
+            imgName = this.images.size - 1;
         }
         else {
             imgName += incDec;

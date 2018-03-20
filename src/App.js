@@ -5,6 +5,7 @@ import Row from './components/Row'
 import Carousel from './components/Carousel';
 import NameCard from './components/NameCard'
 import ProgressBar from './components/ProgressBar'
+import { progressBars, modalButton } from './index.css'
 
 class App extends Component {
   constructor(props) {
@@ -60,10 +61,9 @@ class App extends Component {
               </Row> 
           <div >
           </div>
-
           <br />
-            images={['http://blogs.herald.com/.a/6a00d83451587d69e201901df83045970b-pi',
           <Carousel
+            images={['http://blogs.herald.com/.a/6a00d83451587d69e201901df83045970b-pi',
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEsBsyagjBiUm9vwwkSTDAdX9-Z3F4-wCtNEV1GSD5L5rNfQPNrg'
             ]}
             size='large' />
