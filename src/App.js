@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import Modal from './components/Modal';
-import ProgressBar from './components/ProgressBar'
-import NameCard from './components/NameCard'
-import Row from './components/Row'
 import Col from './components/Col'
-
-
-import { modalButton, progressBars } from './index.css'
+import Row from './components/Row'
+import Carousel from './components/Carousel';
+import NameCard from './components/NameCard'
+import ProgressBar from './components/ProgressBar'
 
 class App extends Component {
   constructor(props) {
@@ -25,7 +23,7 @@ class App extends Component {
           <Modal.Footer>Modal Footer</Modal.Footer>
         </Modal>
         <NameCard 
-          name="Örn Friðriksson la lal ala l fsdlsdfh lksdnhflakdjbf lksdglkhsdflkasdlkskd "
+          name="Örn Friðriksson"
           email="orn16@ru.is"
           telephone="+354-58-12345"
           imageUrl="https://i.imgur.com/51sJROo.png"/>
@@ -57,13 +55,18 @@ class App extends Component {
                 <Col size={4}></Col>
                 <Col size={4}></Col>
                 <Col size={4}></Col>
-                <Col size={4}></Col>
               
+                <Col size={4}></Col>
               </Row> 
           <div >
-
           </div>
-          
+
+          <br />
+            images={['http://blogs.herald.com/.a/6a00d83451587d69e201901df83045970b-pi',
+          <Carousel
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEsBsyagjBiUm9vwwkSTDAdX9-Z3F4-wCtNEV1GSD5L5rNfQPNrg'
+            ]}
+            size='large' />
       </div>
     );
   }
