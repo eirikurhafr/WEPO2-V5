@@ -1,11 +1,5 @@
 .rows{
     width: 550px;
-    height: auto;
-    text-align: center;
-    background-color: rgb(247, 247, 247);
-    border: solid 5px rgb(105, 105, 105);
-    border-radius: 7px;
-    float: left;
-    text-justify: auto;
-    box-shadow: 5px 10px 18px #888888;
+
+    align-content: center;
 }

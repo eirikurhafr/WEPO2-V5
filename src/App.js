@@ -56,8 +56,16 @@ class App extends Component {
                 <Col size={4}></Col>
                 <Col size={4}></Col>
                 <Col size={4}></Col>
-              
                 <Col size={4}></Col>
+                <Col size={8}></Col>
+              </Row> 
+              <Row>
+                <Col size={1}></Col>
+                <Col size={1}></Col>
+                <Col size={1}></Col>
+                <Col size={1}></Col>
+                <Col size={1}></Col>
+                <Col size={7}></Col>
               </Row> 
           <div >
           </div>

@@ -4,7 +4,7 @@ import { cols } from './col.css';
 const Col = ({ size }) => {
     return(
         <div className={ cols } style={{width: `${size/12 * 100}%`}}>
-            immaCol
+            Col object {size} / 12
         </div>
         
     )
