@@ -7,6 +7,7 @@ import DatePicker from './components/DatePicker';
 import NameCard from './components/NameCard';
 import ProgressBar from './components/ProgressBar';
 import { progressBars, modalButton } from './index.css';
+import CartoonNetworkSpinner from './components/CartoonNetworkSpinner';
 
 class App extends Component {
   constructor(props) {
@@ -69,6 +70,9 @@ class App extends Component {
                 <Col size={7}></Col>
               </Row> 
           <div >
+            <CartoonNetworkSpinner
+              interval={4} />
+
           </div>
           <br />
           <Carousel
