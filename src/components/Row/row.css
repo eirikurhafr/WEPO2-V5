@@ -1,5 +1,5 @@
 .rows{
     width: 550px;
-
+    height: max-content ;
     align-content: center;
 }
