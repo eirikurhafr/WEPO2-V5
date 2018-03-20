@@ -2,35 +2,43 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles, { prev, next, carousel, img } from './carousel.css';
 
-const Carousel = ({ images, size }) => {
-    var imgName = 0;
-    
-    var incrementPic = () => {
-        if(imgName === images.size - 1) {
-            imgName = 0;
+class Carousel extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            imgName: 0
+        };
+    }
+
+    incrementPic() {
+        if(this.state.imgName === this.props.images.length - 1) {
+            this.setState({imgName: 0});
         }
         else {
-            imgName += 1;
+            const num = this.state.imgName + 1;
+            this.setState({imgName: num});
         }
     }
 
-    var decrementPic = () => {
-        if(imgName === 0) {
-            imgName = images.size - 1;
+    decrementPic() {
+        if(this.state.imgName === 0) {
+            this.setState({imgName: this.props.images.length - 1});
         }
         else {
-            imgName -= 1;
+            const num = this.state.imgName - 1;
+            this.setState({imgName: num});
         }
     }
 
-
-    return(
-        <div className={ carousel }>
-            <button className={{ prev }} onClick={ decrementPic() }> Prev </button>
-            <img className={ `${styles[size]}` } src={images[imgName]} alt="carousel"/>
-            <button className={{ next }} onClick={ incrementPic() }> Next </button>
-        </div>
-    )
+    render(){
+        return(
+            <div className={ carousel }>
+                <button className={{ prev }} onClick={ this.decrementPic.bind(this) }> Prev </button>
+                <img className={ `${styles[this.props.size]}` } src={this.props.images[this.state.imgName]} alt="carousel"/>
+                <button className={{ next }} onClick={ this.incrementPic.bind(this) }> Next </button>
+            </div>
+        )
+    }
 }
 
 Carousel.propTypes = {
