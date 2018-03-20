@@ -1,0 +1,6 @@
+.cols{
+    float: left;
+    display: flex;
+    align-content: center;
+
+}

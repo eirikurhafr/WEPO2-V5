@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import Modal from './components/Modal';
 import ProgressBar from './components/ProgressBar'
 import NameCard from './components/NameCard'
+import Row from './components/Row'
+import Col from './components/Col'
+
+
 import { modalButton, progressBars } from './index.css'
 
 class App extends Component {
@@ -24,7 +28,7 @@ class App extends Component {
           name="Örn Friðriksson la lal ala l fsdlsdfh lksdnhflakdjbf lksdglkhsdflkasdlkskd "
           email="orn16@ru.is"
           telephone="+354-58-12345"
-          imageUrl="https://www.commondreams.org/sites/default/files/styles/cd_large/public/views-article/19225749489_a57875fe79_h.jpg?itok=zFMh4iyP"/>
+          imageUrl="https://i.imgur.com/51sJROo.png"/>
         
           <div className={progressBars}>
             <ProgressBar
@@ -48,6 +52,17 @@ class App extends Component {
               animated={false} 
               state='danger' />
           </div>
+              <Row>
+                <Col size={12}></Col>
+                <Col size={4}></Col>
+                <Col size={4}></Col>
+                <Col size={4}></Col>
+                <Col size={4}></Col>
+              
+              </Row> 
+          <div >
+
+          </div>
           
       </div>
     );
@@ -55,3 +70,4 @@ class App extends Component {
 }
 
 export default App;
+
