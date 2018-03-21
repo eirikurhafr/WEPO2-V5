@@ -5,7 +5,16 @@
     height: auto;
 }
 
+@keyframes spinPic {
+    0% { transform: rotate(0deg); }
+    5% { transform: rotate(360deg); }
+    100% { transform: rotate(360deg); }
+}
+
 .image{
-    width: 400px;
-    height: 400x;
+    width: 200px;
+    height: 200px;
+    animation-name: spinPic;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }

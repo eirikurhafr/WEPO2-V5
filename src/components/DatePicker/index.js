@@ -14,8 +14,7 @@ class DatePicker extends React.Component {
         return(
             <div className={datePicker}>
                 <button className="dateBtn">{this.state.date}</button>
-            </div>
-            
+            </div>      
         )
     }
 };
